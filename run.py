@@ -3,11 +3,10 @@ Tic Tac Toe
 """
 
 
-"""
-Introduktion with the rules of Tic Tac Toe
-"""
 def intro():
-    print("welcome to Tic Tac Toe!\n")
+    """
+    Introduktion with the rules of Tic Tac Toe
+    """
     print("The game is played on a grid that's 3 squares by 3 squares. "
           "You are X, your friend (or the computer in this case) is O. "
           "Players take turns putting their marks in empty squares. "
@@ -17,10 +16,10 @@ def intro():
     print("\n")
 
 
-"""
-This creates a empty grid
-"""
 def new_grid():
+    """
+    This creates a empty grid
+    """
     print("The new board:")
     grid = [[" ", " ", " "],
             [" ", " ", " "],
@@ -28,10 +27,10 @@ def new_grid():
     return grid
 
 
-"""
-This change look on the grid and makes it nicer
-"""
 def lookGreat(grid):
+    """
+    This change look on the grid and makes it nicer
+    """
     rows = len(grid)
     cols = len(grid)
     print("-----------")
@@ -41,16 +40,14 @@ def lookGreat(grid):
     return grid
 
 
-"""
-Main function, calls all other functions
-"""
 def main():
+    """
+    Run all program functions
+    """
     introduktion = intro()
     grid = new_grid()
     nicer = lookGreat(grid)
 
 
-"""
-Call main function
-"""
+print("Welcome to Tic Tac Toe!\n")
 main()
