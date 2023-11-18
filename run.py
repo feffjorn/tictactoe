@@ -8,7 +8,7 @@ def intro():
     Introduktion with the rules of Tic Tac Toe
     """
     print("The game is played on a grid that's 3 squares by 3 squares. "
-          "You are X, your friend (or the computer in this case) is O. "
+          "You are X, your friend is O. "
           "Players take turns putting their marks in empty squares. "
           "The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.")
     print("\n")
@@ -165,29 +165,29 @@ def isWinner(grid, symbol_1, symbol_2, count):
     for col in range (0, 3):
         if (grid[0][col] == grid[1][col] == grid[2][col] == symbol_1):
             winner = False
-            print("Player " + symbol_1 + ", you won!")
+            print("Player" + symbol_1 + ", you won!")
         elif (grid[0][col] == grid[1][col] == grid[2][col] == symbol_2):
             winner = False
-            print("Player " + symbol_2 + ", you won!")
+            print("Player" + symbol_2 + ", you won!")
 
     """
     Checks the diagnoals
     """
     if grid[0][0] == grid[1][1] == grid[2][2] == symbol_1:
         winner = False 
-        print("Player " + symbol_1 + ", you won!")
+        print("Player" + symbol_1 + ", you won!")
 
     elif grid[0][0] == grid[1][1] == grid[2][2] == symbol_2:
         winner = False
-        print("Player " + symbol_2 + ", you won!")
+        print("Player" + symbol_2 + ", you won!")
 
     elif grid[0][2] == grid[1][1] == grid[2][0] == symbol_1:
         winner = False
-        print("Player " + symbol_1 + ", you won!")
+        print("Player" + symbol_1 + ", you won!")
 
     elif grid[0][2] == grid[1][1] == grid[2][0] == symbol_2:
         winner = False
-        print("Player " + symbol_2 + ", you won!")
+        print("Player" + symbol_2 + ", you won!")
 
     return winner
 
@@ -200,11 +200,11 @@ def report(count, winner, symbol_1, symbol_2):
     print("\n")
     input("Press enter to see the game summary.")
     if (winner == False) and (count % 2 == 1 ):
-        print("Winner : Player " + symbol_1 + ".")
+        print("Winner: Player " + symbol_1 + ".")
     elif (winner == False) and (count % 2 == 0 ):
-        print("Winner : Player " + symbol_2 + ".")
+        print("Winner: Player " + symbol_2 + ".")
     else:
-        print("There is a tie. ")
+        print("There is a tie.")
 
 
 def main():
