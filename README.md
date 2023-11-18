@@ -1,32 +1,66 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Tic-Tac-Toe
 
-Welcome,
+Tic-Tac-Toe is a Python terminal game, which runs in the Code institute mock terminal on Heroku
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+Users can play 1v1 against each other in this classic version of Tic Tac Toe.
 
-## Reminders
+## How to play
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+Tic-Tac-Toe is based on the classic game that was first played in the Roman Empire, around the first century BC. You can read more about it on Wikipedia
 
-## Creating the Heroku app
+In this version, player 1 chooses X or O and player 2 get the other. You then face of against each other to try and get 3 in a row.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+The rules are as follow. They are also listed at the start of the game.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+- The game is played on a grid that's 3 squares by 3 squares
+- You are X or O, your friend is the other one
+- Players take turns putting their marks in empty squares
+- The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Features
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### Existing Features
 
-Connect your GitHub repository and deploy as normal.
+- Board generation
 
-## Constraints
+- Play 1v1 against each other
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+- Input validation and error checking
 
----
+### Future Features
 
-Happy coding!
+- Allow players to play against a random AI, and not just each other
+
+## Data Model
+
+## Testing
+
+I have manuelly tested this project by doing the following:
+
+- Passed the code through a PEP8 linter and confirmed there are no problems
+- Given invalid inputs: strings when numbers are expected, out of bounds inputs, same input twice
+- Tested in my local terminal and the Code Institute Heroku terminal
+
+## Bugs
+
+### Solves Bugs
+
+### Remaining Bugs
+
+### Validator Testing
+
+## Deployment
+
+This project was deployed using Code Institute's mock terminal for Heroku.
+
+- Steps for deployment:
+    - Fork or clone this repository
+    - Create a new Heroku app
+    - Set the buildbacks to Python and NodeJS in that order
+    - Link the Heroku app to the repository
+    - Click on Deploy
+
+## Credits
+
+- Code Institute for the deployment terminal
+- Wikipedia for the details of the Tic-Tac-Toe game

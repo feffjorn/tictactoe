@@ -8,7 +8,7 @@ def intro():
     Introduktion with the rules of Tic Tac Toe
     """
     print("The game is played on a grid that's 3 squares by 3 squares. "
-          "You are X, your friend is O. "
+          "You are X or O, your friend is the other one. "
           "Players take turns putting their marks in empty squares. "
           "The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.")
     print("\n")
