@@ -13,7 +13,7 @@ def intro():
           "The first player to get 3 of her marks in a row (up, down, \n"
           "across, or diagonally) is the winner.")
     print("\n")
-    input("Press enter to continue!")
+    input("Press enter to continue!\n")
     print("\n")
 
 
@@ -45,14 +45,14 @@ def sym():
     """
     This decides the players symbols
     """
-    symbol_1 = input("Player 1, do you want to be X or O? ")
+    symbol_1 = input("Player 1, do you want to be X or O? \n")
     if symbol_1 == "X":
         symbol_2 = "O"
         print("Player 2, you are O.")
     else:
         symbol_2 = "X"
         print("Player 2, you are X.")
-    input("Press enter to continue!")
+    input("Press enter to continue!\n")
     print("\n")
     return (symbol_1, symbol_2)
 
@@ -71,10 +71,10 @@ def start(grid, symbol_1, symbol_2, count):
     print("Player"+player+", it is your turn. ")
     row = int(input("Pick a row:"
                     "[upper row: enter 0, middle row: enter 1, "
-                    "bottom row: enter 2]:"))
+                    "bottom row: enter 2]:\n"))
     column = int(input("Pick a column:"
                        "[left column: enter 0, middle column: enter 1, "
-                       "right column enter 2]"))
+                       "right column enter 2]\n"))
 
     """
     Checks if players' selection is out of range
@@ -83,10 +83,10 @@ def start(grid, symbol_1, symbol_2, count):
         outOfBoard(row, column)
         row = int(input("Pick a row[upper row:"
                         "[enter 0, middle row: enter 1, "
-                        "bottom row: enter 2]:"))
+                        "bottom row: enter 2]:\n"))
         column = int(input("Pick a column:"
                            "[left column: enter 0, middle column: "
-                           "enter 1, right column enter 2]"))
+                           "enter 1, right column enter 2]\n"))
 
     """
     Checks if the square is already filled
@@ -95,10 +95,10 @@ def start(grid, symbol_1, symbol_2, count):
         filled = illegal(grid, symbol_1, symbol_2, row, column)
         row = int(input("Pick a row[upper row:"
                         "[enter 0, middle row: enter 1, "
-                        "bottom row: enter 2]:"))
+                        "bottom row: enter 2]:\n"))
         column = int(input("Pick a column:"
                            "[left column: enter 0, middle column: enter 1, "
-                           "right column enter 2]"))
+                           "right column enter 2]\n"))
 
     """
     Locates the player's symbol on the grid
@@ -204,7 +204,7 @@ def illegal(grid, symbol_1, symbol_2, row, column):
 
 def report(count, winner, symbol_1, symbol_2):
     print("\n")
-    input("Press enter to see the game summary.")
+    input("Press enter to see the game summary.\n")
     if (winner == False) and (count % 2 == 1):
         print("Winner: Player " + symbol_1 + ".")
     elif (winner == False) and (count % 2 == 0):
