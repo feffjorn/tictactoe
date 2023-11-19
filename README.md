@@ -4,9 +4,11 @@ Tic-Tac-Toe is a Python terminal game, which runs in the Code institute mock ter
 
 Users can play 1v1 against each other in this classic version of Tic Tac Toe.
 
+[Here is the live version](https://github.com/Code-Institute-Org/gitpod-full-template)
+
 ## How to play
 
-Tic-Tac-Toe is based on the classic game that was first played in the Roman Empire, around the first century BC. You can read more about it on Wikipedia
+Tic-Tac-Toe is based on the classic game that was first played in the Roman Empire, around the first century BC. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
 
 In this version, player 1 chooses X or O and player 2 get the other. You then face of against each other to try and get 3 in a row.
 
@@ -22,16 +24,25 @@ The rules are as follow. They are also listed at the start of the game.
 ### Existing Features
 
 - Board generation
+    - Creates a new playground at the start of the game
+
+![Board generation](https://fekadon.github.io/tictactoe/media/features_first.png)
 
 - Play 1v1 against each other
+    - X or O options for players to choose
+
+![Play against each other](https://fekadon.github.io/tictactoe/media/features_second.png)
 
 - Input validation and error checking
+    - You can not enter coordinates outside the size of the grid
+    - You can not enter the same coordinates twice
+
+![Input validation](https://fekadon.github.io/tictactoe/media/features_third.png)
 
 ### Future Features
 
 - Allow players to play against a random AI, and not just each other
-
-## Data Model
+- Check if letters are used instead of numbers. Right now it crashes the game.
 
 ## Testing
 
@@ -43,11 +54,20 @@ I have manuelly tested this project by doing the following:
 
 ## Bugs
 
-### Solves Bugs
+### Solved Bugs
+
+- No solved bugs
 
 ### Remaining Bugs
 
+- Writing letters instead of numbers in the console crashes the game
+- Leaving the row empty and not entering anything crashes the game
+
 ### Validator Testing
+
+- PEP8
+    - Error was found in 5 places of the code using the PEP8online.com validator
+    - Ignored the suggested changes because the game won't work with them
 
 ## Deployment
 

@@ -7,10 +7,11 @@ def intro():
     """
     Introduktion with the rules of Tic Tac Toe
     """
-    print("The game is played on a grid that's 3 squares by 3 squares. "
-          "You are X or O, your friend is the other one. "
-          "Players take turns putting their marks in empty squares. "
-          "The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.")
+    print("The game is played on a grid that's 3 squares by 3 squares. \n"
+          "You are X or O, your friend is the other one. \n"
+          "Players take turns putting their marks in empty squares. \n"
+          "The first player to get 3 of her marks in a row (up, down, \n"
+          "across, or diagonally) is the winner.")
     print("\n")
     input("Press enter to continue!")
     print("\n")
@@ -67,12 +68,13 @@ def start(grid, symbol_1, symbol_2, count):
         player = symbol_1
     elif count % 2 == 1:
         player = symbol_2
-    print("Player "+ player + ", it is your turn. ")
+    print("Player"+player+", it is your turn. ")
     row = int(input("Pick a row:"
-                    "[upper row: enter 0, middle row: enter 1, bottom row: enter 2]:"))
+                    "[upper row: enter 0, middle row: enter 1, "
+                    "bottom row: enter 2]:"))
     column = int(input("Pick a column:"
-                       "[left column: enter 0, middle column: enter 1, right column enter 2]"))
-
+                       "[left column: enter 0, middle column: enter 1, "
+                       "right column enter 2]"))
 
     """
     Checks if players' selection is out of range
@@ -80,29 +82,33 @@ def start(grid, symbol_1, symbol_2, count):
     while (row > 2 or row < 0) or (column > 2 or column < 0):
         outOfBoard(row, column)
         row = int(input("Pick a row[upper row:"
-                        "[enter 0, middle row: enter 1, bottom row: enter 2]:"))
+                        "[enter 0, middle row: enter 1, "
+                        "bottom row: enter 2]:"))
         column = int(input("Pick a column:"
-                        "[left column: enter 0, middle column: enter 1, right column enter 2]"))
+                           "[left column: enter 0, middle column: "
+                           "enter 1, right column enter 2]"))
 
     """
     Checks if the square is already filled
     """
-    while (grid[row][column] == symbol_1)or (grid[row][column] == symbol_2):
+    while (grid[row][column] == symbol_1) or (grid[row][column] == symbol_2):
         filled = illegal(grid, symbol_1, symbol_2, row, column)
         row = int(input("Pick a row[upper row:"
-                        "[enter 0, middle row: enter 1, bottom row: enter 2]:"))
+                        "[enter 0, middle row: enter 1, "
+                        "bottom row: enter 2]:"))
         column = int(input("Pick a column:"
-                        "[left column: enter 0, middle column: enter 1, right column enter 2]"))    
+                           "[left column: enter 0, middle column: enter 1, "
+                           "right column enter 2]"))
 
-    """   
+    """
     Locates the player's symbol on the grid
     """
     if player == symbol_1:
         grid[row][column] = symbol_1
-            
+
     else:
         grid[row][column] = symbol_2
-    
+
     return (grid)
 
 
@@ -115,7 +121,7 @@ def isFull(grid, symbol_1, symbol_2):
     while count < 10 and winner == True:
         gaming = start(grid, symbol_1, symbol_2, count)
         nicer = lookGreat(grid)
-        
+
         if count == 9:
             print("The playground is full. Game over!")
             if winner == True:
@@ -128,7 +134,7 @@ def isFull(grid, symbol_1, symbol_2):
         count += 1
     if winner == False:
         print("Game over!")
-        
+
     """
     This gives a report
     """
@@ -150,19 +156,19 @@ def isWinner(grid, symbol_1, symbol_2, count):
     """
     Checks the rows
     """
-    for row in range (0, 3):
+    for row in range(0, 3):
         if (grid[row][0] == grid[row][1] == grid[row][2] == symbol_1):
             winner = False
             print("Player " + symbol_1 + ", you won!")
-   
+
         elif (grid[row][0] == grid[row][1] == grid[row][2] == symbol_2):
             winner = False
             print("Player " + symbol_2 + ", you won!")
-            
-    """ 
+
+    """
     Checks the columns
     """
-    for col in range (0, 3):
+    for col in range(0, 3):
         if (grid[0][col] == grid[1][col] == grid[2][col] == symbol_1):
             winner = False
             print("Player" + symbol_1 + ", you won!")
@@ -174,7 +180,7 @@ def isWinner(grid, symbol_1, symbol_2, count):
     Checks the diagnoals
     """
     if grid[0][0] == grid[1][1] == grid[2][2] == symbol_1:
-        winner = False 
+        winner = False
         print("Player" + symbol_1 + ", you won!")
 
     elif grid[0][0] == grid[1][1] == grid[2][2] == symbol_2:
@@ -195,13 +201,13 @@ def isWinner(grid, symbol_1, symbol_2, count):
 def illegal(grid, symbol_1, symbol_2, row, column):
     print("The square you picked is already filled. Pick another one.")
 
-    
+
 def report(count, winner, symbol_1, symbol_2):
     print("\n")
     input("Press enter to see the game summary.")
-    if (winner == False) and (count % 2 == 1 ):
+    if (winner == False) and (count % 2 == 1):
         print("Winner: Player " + symbol_1 + ".")
-    elif (winner == False) and (count % 2 == 0 ):
+    elif (winner == False) and (count % 2 == 0):
         print("Winner: Player " + symbol_2 + ".")
     else:
         print("There is a tie.")
@@ -216,7 +222,6 @@ def main():
     nicer = lookGreat(grid)
     symbol_1, symbol_2 = sym()
     full = isFull(grid, symbol_1, symbol_2)
-
 
 
 print("Welcome to Tic Tac Toe!\n")
