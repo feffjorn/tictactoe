@@ -4,7 +4,7 @@ Tic-Tac-Toe is a Python terminal game, which runs in the Code institute mock ter
 
 Users can play 1v1 against each other in this classic version of Tic Tac Toe.
 
-[Here is the live version](https://github.com/Code-Institute-Org/gitpod-full-template)
+[Here is the live version](https://fekadon-tictactoe-31e8140a6902.herokuapp.com/)
 
 ## How to play
 
