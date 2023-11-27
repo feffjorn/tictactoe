@@ -6,6 +6,8 @@ Users can play 1v1 against each other in this classic version of Tic Tac Toe.
 
 [Here is the live version](https://fekadon-tictactoe-31e8140a6902.herokuapp.com/)
 
+![Finished look](https://github.com/fekadon/tictactoe/blob/main/media/tictactoe_finished.png)
+
 ## How to play
 
 Tic-Tac-Toe is based on the classic game that was first played in the Roman Empire, around the first century BC. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
