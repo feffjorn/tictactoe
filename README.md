@@ -26,18 +26,18 @@ The rules are as follow. They are also listed at the start of the game.
 - Board generation
     - Creates a new playground at the start of the game
 
-![Board generation](https://fekadon.github.io/tictactoe/media/features_first.png)
+![Board generation](https://github.com/fekadon/tictactoe/blob/main/media/features_first.png)
 
 - Play 1v1 against each other
     - X or O options for players to choose
 
-![Play against each other](https://fekadon.github.io/tictactoe/media/features_second.png)
+![Play against each other](https://github.com/fekadon/tictactoe/blob/main/media/features_second.png)
 
 - Input validation and error checking
     - You can not enter coordinates outside the size of the grid
     - You can not enter the same coordinates twice
 
-![Input validation](https://fekadon.github.io/tictactoe/media/features_third.png)
+![Input validation](https://github.com/fekadon/tictactoe/blob/main/media/features_third.png)
 
 ### Future Features
 
