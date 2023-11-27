@@ -42,7 +42,7 @@ The rules are as follow. They are also listed at the start of the game.
 ### Future Features
 
 - Allow players to play against a random AI, and not just each other
-- Check if letters are used instead of numbers. Right now it crashes the game.
+- Fix remaining bugs
 
 ## Testing
 
@@ -60,6 +60,7 @@ I have manuelly tested this project by doing the following:
 
 ### Remaining Bugs
 
+- Players can still pick other letters then X and O
 - Writing letters instead of numbers in the console crashes the game
 - Leaving the row empty and not entering anything crashes the game
 
